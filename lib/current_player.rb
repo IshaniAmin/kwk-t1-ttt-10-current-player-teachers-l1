@@ -4,6 +4,7 @@ def turn_count(board)
   board.each |place| do
     if place == "X" || place == "O"
       count += 1
+    end
   end
   count
 end
