@@ -1,10 +1,10 @@
 
 def turn_count(board)
-  i = 0
+  count = 0
   board.each do |cell|
-    i += 1 if (cell == "X") || (cell == "O")
+    count += 1 if (cell == "X") || (cell == "O")
   end
-  i
+  count
 end
 
 def current_player(board)
