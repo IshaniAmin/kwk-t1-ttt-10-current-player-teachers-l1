@@ -19,5 +19,3 @@ def current_player(board)
     "Y"
   end
 end
-
-current_player(board)
