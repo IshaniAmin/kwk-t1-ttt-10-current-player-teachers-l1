@@ -1,19 +1,12 @@
 
 def turn_count(board)
-
-  count = 0
-  board.each |place| do
-    if place == "X" || place == "O"
-      count += 1
-    end
-  # end
-  # count
+  i = 0
+  board.each do |cell|
+    i += 1 if (cell == "X") || (cell == "O")
+  end
+  i
 end
 
-
-
 def current_player(board)
-  count = turn_count(board)
-  count % 2 == 0 ? "X" : "O"
-
+  turn_count(board).odd? ? "O" : "X"
 end
